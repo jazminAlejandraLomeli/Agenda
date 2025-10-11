@@ -1,0 +1,127 @@
+.fc .fc-toolbar-title{
+    text-transform: capitalize;
+}
+
+.fc-today-button{
+    margin-left: 10px !important;
+    border-radius: 4px !important;
+}
+
+.fc-button-primary{
+    background-color:rgba(205, 87, 0, 1) !important;
+    color: #fff !important;
+    border: 2px solid #D77933 !important;
+}
+
+.fc-toolbar-title{
+    font-weight: bold;
+}
+
+.fc .fc-timegrid-col.fc-day-today{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.fc-button-active{
+    background-color:rgba(205, 87, 0, 1) !important;
+    color: #fff !important;
+    border: 2px solid #D77933 !important;
+}
+
+.fc-button-primary:hover{
+    background-color:rgba(205, 87, 0, 0.8) !important;
+    color: #fff !important;
+    border: 2px solid #D77933 !important;
+}
+
+.fc-button-active{
+    background-color: #863900 !important;
+    border: 2px solid #863900 !important;
+}
+
+.fc-v-event{
+    /* border: none !important; */
+    border-width: 0px 0px 0px 4px;
+    padding-left: 7px;
+    cursor: pointer;
+    /* border-left-width: 4px !important; */
+    border-radius: 0px !important;
+    /* background-color:#dd1111; */
+    /* background-color: rgba(196, 32,33, .15) !important; */
+}
+
+.fc-theme-standard td, .fc-theme-standard th{
+    border-color: rgb(231, 231, 231);
+}
+
+
+@media (prefers-color-scheme: dark){
+    .fc-col-header {
+        background-color: rgb(17 24 39) !important;
+    }
+
+    .fc .fc-list-event:hover td{
+        background-color: rgb(55 ,65, 81) !important;
+        cursor: pointer;
+
+    }
+
+    .fc-daygrid-event-harness:hover{
+        background-color: rgb(55 ,65, 81) !important;
+        cursor: pointer;
+    }
+
+    /* .fc-scrollgrid-section-body{
+        background-color: rgb(17 24 39) !important;
+    } */
+
+    .fc-theme-standard td, .fc-theme-standard th{
+        border-color: rgb(39, 52, 70);
+    }
+
+    .fc-theme-standard .fc-scrollgrid{
+        border: none;
+    }
+
+    .fc-v-event::after{
+        background-color: rgb(17 24 39) !important;
+    }
+
+    .fc-timegrid-event-harness-inset .fc-timegrid-event, .fc-timegrid-event.fc-event-mirror, .fc-timegrid-more-link{
+        box-shadow: none;
+    }    
+
+    .fc-theme-standard .fc-list-day-cushion{
+        background-color: rgb(17 24 39) !important;
+        
+    }
+
+    .fc-theme-standard .fc-list{
+        border: none;
+    }
+}
+
+
+.fc-v-event::after{
+    content: '';
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+}
+
+.fc-v-event .fc-event-main{
+    /* color: #C42021 !important; */
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+@media (max-width: 680px){
+    .fc .fc-toolbar{
+        flex-direction: column-reverse;
+        gap: 10px; 
+    }
+}

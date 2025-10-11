@@ -1,0 +1,46 @@
+import { regexLetters } from "../helpers/regex";
+import { showErrors } from "../helpers/showErrors";
+
+const errorPermissions = document.querySelector('#error-permissions');
+const accordionPermission = document.querySelector('.accordionPermission');
+
+let validate = true;
+
+export const validateDataUser = (data, fields) => {
+    validate = true;
+
+    const errors = [];
+
+    // Clear errors
+    errorPermissions.textContent = '';
+    errorPermissions.classList.add('hidden');
+    accordionPermission.classList.add('border-neutral-300','dark:border-neutral-700');
+    accordionPermission.classList.remove('border-red-500','dark:border-red-700');
+    
+    if(data.get('group') == '' || data.get('group') == null){
+        errors['group'] = 'El grupo es obligatorio, debe seleccionar uno';
+        validate = false;
+    }
+
+
+    if(data.get('role') == '' || data.get('role') == null){
+        errors['role'] = 'El role es obligatorio, debe seleccionar uno';
+        validate = false;
+    }
+
+
+    console.log(data.get('role'),data.get('group'));
+
+    if(((data.get('role') != null) && (data.get('group') != null)) && data.getAll('permissions[]').length === 0){
+        errorPermissions.textContent = 'Debe seleccionar al menos un permiso para agregar el usuario'
+        errorPermissions.classList.remove('hidden');
+        accordionPermission.classList.remove('border-neutral-300','border-neutral-700');
+        accordionPermission.classList.add('border-red-500','border-red-700');
+
+        validate = false;
+    }
+
+    showErrors(fields, errors);
+
+    return validate;
+}

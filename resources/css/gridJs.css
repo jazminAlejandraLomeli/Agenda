@@ -1,0 +1,46 @@
+
+.gridjs-footer{
+    @apply dark:bg-gray-900 dark:text-gray-400  border-0 !important;
+  }
+
+.gridjs-summary{
+    @apply dark:text-gray-400  !important;
+}
+
+.gridjs-wrapper{
+    @apply border-none !important;
+}
+
+.gridjs-search-input{
+    @apply dark:bg-gray-700 dark:text-gray-50 dark:placeholder:text-gray-400 text-sm  border-0 !important;
+    @apply border-2 !important;
+}
+
+.gridjs-head{
+    @apply flex justify-end !important;
+}
+
+.gridjs-pages button{
+    @apply dark:bg-gray-700 dark:text-gray-400 dark:border-gray-900 !important;
+}
+
+.gridjs-thead{
+    @apply border-none !important;
+}
+
+.gridjs-td{
+    @apply dark:bg-gray-800 dark:border-gray-700 dark:text-gray-50 !important;
+}
+
+.gridjs-th{
+    @apply dark:bg-gray-900 dark:border-gray-600 dark:text-gray-400 !important;
+}
+
+.gridjs-loading-bar{
+    @apply dark:bg-gray-900 !important;
+}
+
+/* .gridjs-tbody{
+    @apply dark:bg-gray-700 !important
+} */
+
