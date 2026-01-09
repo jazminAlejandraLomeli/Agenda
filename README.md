@@ -8,5 +8,5 @@ Centraliza la información acerca de la reservaciones para espacios de recreacio
 - PHP
 - MySQL
 - Blade
-- Tailwind Css
+- Tailwind CSS
 - Grid.js
