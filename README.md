@@ -1,6 +1,6 @@
 # Agenda
 
-Sistema web para la gestión de aulas y espacios del campus desarrollado con Laravel.
+Sistema web para la gestión de eventos, aulas y espacios del campus desarrollado con Laravel.
 Centraliza la información acerca de la reservaciones para espacios de recreacion, aulas y laboratorios del campus.
 
 ## 🛠 Tecnologías
